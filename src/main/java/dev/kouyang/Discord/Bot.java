@@ -17,19 +17,18 @@ public class Bot {
     public static JDA jda;
 
     public static void initBot(){
-        jda = JDABuilder.createDefault("MTIwNzQxNDYwMzM0NTMwNTY3MA.G9PmVe.2MG_w4UVp9O0_WcavCyzhLjCzf3qjCViawrADI")
+        jda = JDABuilder.createDefault("MTIwNzQxNDYwMzM0NTMwNTY3MA.GNThei.RvYKl8ow2BsRd1HDz76bFcTY4afkwwWMq1eZFc")
                 .setActivity(Activity.watching("Cybercats"))
                 .addEventListeners(new CommandManager()).build();
 
         List<CommandData> commandData = new ArrayList<>();
         OptionData ping = new OptionData(OptionType.STRING, "string", "what u want to say");
         OptionData team = new OptionData(OptionType.INTEGER, "number", "Team number you want info of");
-        OptionData chat= new OptionData(OptionType.STRING, "prompt","What you want to ask");
-
+        OptionData form = new OptionData(OptionType.STRING, "string", "what do you want to scout");
 
         commandData.add(Commands.slash("ping", "Says back whatever").addOptions(ping));
         commandData.add(Commands.slash("teams","teams").addOptions(team));
-        commandData.add(Commands.slash("chat","give you answers").addOptions(chat));
+        commandData.add(Commands.slash("form","give you answers").addOptions(form));
 
         jda.updateCommands().addCommands(commandData).queue();
     }
