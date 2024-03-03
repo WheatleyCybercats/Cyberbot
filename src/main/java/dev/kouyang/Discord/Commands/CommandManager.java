@@ -30,12 +30,23 @@ public class CommandManager extends ListenerAdapter {
     @Override
     public void onModalInteraction(@NotNull ModalInteractionEvent event){
         if (event.getModalId().equals("pit")) {
+
             String team = event.getValue("team").getAsString();
-            String rating = event.getValue("rating").getAsString();
             String region = event.getValue("region").getAsString();
-            System.out.println(team);
-            System.out.println(rating);
+            String auto = event.getValue("auto").getAsString();
+            String scoring = event.getValue("scoring").getAsString();
+            String other = event.getValue("other").getAsString();
+
+
             System.out.println(region);
+            System.out.println(auto);
+            System.out.println(scoring);
+            System.out.println(team);
+            System.out.println(other);
+
+
+
+
 
             event.reply("Thanks for your request!").setEphemeral(true).queue();
         }
