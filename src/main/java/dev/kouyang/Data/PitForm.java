@@ -5,13 +5,18 @@ import lombok.Data;
 @Data
 public class PitForm {
 
+    private String team;
+    private String region;
+    private String auto;
+    private String scoring;
+    private String other;
 
-    private String region; // region / the scouters name
-    private String auto; // good
-    private String speaker; // amp / speaker / endgame //good
-    private String teamNumber; //good
-    private String other; // stability drive train,
-
-
+    public PitForm(String team, String region, String auto, String scoring, String other){
+        this.team = team;
+        this.region = region;
+        this.auto = auto;
+        this.scoring = scoring;
+        this.other = other;
+    }
 
 }

@@ -46,8 +46,34 @@ public class API {
             teams.put(Integer.valueOf(team.getTeam_number()), team);
         }
 
+
+
+
+        List<Team> TenMatchList = new ArrayList<>();
+        try {
+            for (int i = 0; i < 20; i++) {
+
+                // Map JSON data to a list of Team objects
+                List<Team> teamsList = objectMapper.readValue(Grabber.json("event/2024tnkn/teams"), new TypeReference<List<Team>>() {
+                });
+
+                // Print team details
+                for (Team team : teamsList) {
+                    teams.put(Integer.valueOf(team.getTeam_number()), team);
+                }
+            }
+            System.out.println("ten Teams information gathered");
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
+        for (Team tenteam : TenMatchList) {
+            teams.put(Integer.valueOf(tenteam.getTeam_number()), tenteam);
+        }
+
         //List<Matchinfo> infolist = objectMapper.readValue(Grabber.json("event/2023nyli/teams"), new TypeReference<List<Matchinfo>>() {
        // });
+
+
 
 
 

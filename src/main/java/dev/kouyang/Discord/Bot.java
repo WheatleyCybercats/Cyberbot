@@ -23,7 +23,7 @@ public class Bot {
 
         List<CommandData> commandData = new ArrayList<>();
         OptionData ping = new OptionData(OptionType.STRING, "string", "what u want to say");
-        OptionData team = new OptionData(OptionType.INTEGER, "number", "Team number you want info of");
+        OptionData team = new OptionData(OptionType.INTEGER, "number", "Team number you want info.txt of");
         OptionData form = new OptionData(OptionType.STRING, "string", "what do you want to scout");
 
         commandData.add(Commands.slash("ping", "Says back whatever").addOptions(ping));
