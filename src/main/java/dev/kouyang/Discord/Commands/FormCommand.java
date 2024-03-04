@@ -12,7 +12,7 @@ public class FormCommand {
                 .setPlaceholder("Smoky")
                 .build();
 
-        TextInput robot = TextInput.create("robot", "Robot - DriveTrain / sterdiness / what position they ", TextInputStyle.PARAGRAPH)
+        TextInput robot = TextInput.create("robot", "Robot - DriveTrain / Mechanisms", TextInputStyle.PARAGRAPH)
                 .setPlaceholder("Swerve drive / No shoot/ Yes climb / Yes amp / Yes speaker")
                 .build();
 
@@ -32,6 +32,34 @@ public class FormCommand {
         return Modal.create("pit", "Pit Scouting Form")
                 .addComponents(ActionRow.of(region) , ActionRow.of(robot), ActionRow.of(scoring) ,ActionRow.of(auto), ActionRow.of(other))
                 .build();
+    }
+
+
+
+
+    public static Modal Matchform(){
+/*
+        TextInput Matchnumber = TextInput.create("matchnum", "which match is it", TextInputStyle.SHORT)
+                .setPlaceholder("1/32 ... 2/32")
+                .build();
+        TextInput Matchauto = TextInput.create("matchauto", "How many note auto, and ", TextInputStyle.SHORT)
+                .setPlaceholder("they have a 3 note auto but they aren't consist")
+                .build();
+        TextInput Matchmidgame = TextInput.create("matchmidgame", " how fast is cycle / general pos of game", TextInputStyle.SHORT)
+                .setPlaceholder("fast cycle, and they generally play offence scoring")
+                .build();
+        TextInput Matchendgame = TextInput.create("matcheg", " trap?/ Harmonony?/ Climb?", TextInputStyle.SHORT)
+                .setPlaceholder("1/32 or 2/32")
+                .build();
+        TextInput Matchopinion = TextInput.create("matchopinion", " Rank driver/ how consistent they are   ", TextInputStyle.SHORT)
+                .setPlaceholder("1/32 or 2/32")
+                .build();
+        return Modal.create("match", "Match Scouting Form")
+                .addComponents(ActionRow.of(MatchnumbeMatchnumber) , ActionRow.of(Matchauto), ActionRow.of(Matchmidgame) ,ActionRow.of(Matchendgame), ActionRow.of(Matchopinion))
+                .build();
+
+ */
+return null;
     }
 
 }
