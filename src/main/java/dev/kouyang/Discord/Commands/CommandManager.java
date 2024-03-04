@@ -24,9 +24,6 @@ public class CommandManager extends ListenerAdapter {
             event.reply(teamCommand.getResult()).queue();
         }else if (event.getName().equals("form")) {
             event.replyModal(FormCommand.pitForm()).queue();
-        }else if (event.getName().equals("TenTeams")) {
-            TeamCommand teamCommand = new TeamCommand(event.getOption("number"));
-            event.event.replyModal(FormCommand.pitForm()).queue();
         }
         System.currentTimeMillis();
     }

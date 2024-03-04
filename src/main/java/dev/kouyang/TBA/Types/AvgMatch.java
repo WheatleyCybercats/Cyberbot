@@ -1,8 +1,6 @@
-package dev.kouyang.TBA.TBA;
+package dev.kouyang.TBA.Types;
 
 import lombok.Data;
-
-import java.util.List;
 
 @Data
 

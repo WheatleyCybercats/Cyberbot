@@ -28,7 +28,7 @@ public class FormCommand {
                 .setMinLength(1)
                 .build();
 
-        TextInput other = TextInput.create("other", "Opinions/Thoughts", TextInputStyle.PARAGRAPH)
+        TextInput other = TextInput.create("other", "Opinions/Thoughts/RANK DRIVER", TextInputStyle.PARAGRAPH)
                 .setPlaceholder("although it's not a good scoring bot but they seem to be a good fit for us")
                 .build();
 

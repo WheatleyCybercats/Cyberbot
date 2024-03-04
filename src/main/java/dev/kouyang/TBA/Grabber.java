@@ -1,4 +1,4 @@
-package dev.kouyang.TBA.Core;
+package dev.kouyang.TBA;
 
 import dev.kouyang.TBA.Constant;
 
@@ -19,7 +19,7 @@ public class Grabber {
 
 
     public static String json(String endPoint) throws IOException {
-        String urlString = Constant.APIBase + endPoint + "?X-TBA-Auth-Key=" + Constant.API_KEY;
+        String urlString = Constant.TBAAPIBase + endPoint + "?X-TBA-Auth-Key=" + Constant.API_KEY;
         //System.out.println(urlString);
         URL url = new URL(urlString);
 
@@ -45,7 +45,4 @@ public class Grabber {
 
         return response.toString();
     }
-
-
-
 }

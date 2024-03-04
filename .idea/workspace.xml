@@ -5,24 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68034787-434a-4c69-8417-59097804966d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/CommandsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Statbotics/Grabber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Statbotics/StatAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Statbotics/Types/Teams.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/CommandManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/FormCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/FormCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/API.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/TeamCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/TeamCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/TenTeamCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/TBAapi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Data/PitForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Data/PitForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Bot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Bot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/CommandManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Core/Grabber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Grabber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/TBA/AvgMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Types/AvgMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/TBA/Matchinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Types/Matchinfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/TBA/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Types/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/TBA/preinfo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/FormCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/FormCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/API.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/API.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/TeamCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/TeamCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/Core/Grabber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/TBA/AvgMatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/TBA/Matchinfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/TBA/Team.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/TBA/preinfo.class" beforeDir="false" />
     </list>
-    <list id="b0e8cdde-a256-4d48-95b5-99b09fcc9d5a" name="Changes by kouyang" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Data/PitForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Data/PitForm.java" afterDir="false" />
-    </list>
+    <list id="b0e8cdde-a256-4d48-95b5-99b09fcc9d5a" name="Changes by kouyang" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +78,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="dev.kouyang.TBA" />
+      <recent name="dev.kouyang.Core" />
     </key>
   </component>
   <component name="RunManager">

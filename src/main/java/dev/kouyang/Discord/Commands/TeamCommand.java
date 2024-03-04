@@ -1,9 +1,7 @@
 package dev.kouyang.Discord.Commands;
 
 import dev.kouyang.Main;
-import dev.kouyang.TBA.TBA.Team;
-import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.entities.EmbedType;
+import dev.kouyang.TBA.Types.Team;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 
 public class TeamCommand {
@@ -13,7 +11,7 @@ public class TeamCommand {
     }
 
     public String getResult(){
-        Team team = Main.api.teams.get(optionMapping.getAsInt());
+        Team team = Main.TBAapi.teams.get(optionMapping.getAsInt());
         StringBuilder sb = new StringBuilder();
         sb.append("Nickname: ").append(team.getNickname());
         sb.append("\n");
