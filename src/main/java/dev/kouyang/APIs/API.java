@@ -26,7 +26,7 @@ public class API {
         double recent = stat.normEpa.getRecent();
         double mean = stat.normEpa.getMean();
         double max = stat.normEpa.getMax();
-        double winrate = stat.record.full.getWinrate();
+        double winrate = stat.record.season.getWinrate();
         String robotPictureURL;
         try {
              robotPictureURL = Database.pitFormHashMap.get(teamNumber).getProxyURL();

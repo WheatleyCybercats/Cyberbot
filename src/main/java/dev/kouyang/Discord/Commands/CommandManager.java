@@ -11,12 +11,15 @@ import net.dv8tion.jda.api.interactions.components.text.TextInput;
 import net.dv8tion.jda.api.interactions.components.text.TextInputStyle;
 import org.jetbrains.annotations.NotNull;
 
+import javax.xml.crypto.Data;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class CommandManager extends ListenerAdapter {
     PitForm pf;
+
+    ListTeamCommand LTC = new ListTeamCommand();
     @Override
     public void onSlashCommandInteraction(@NotNull SlashCommandInteractionEvent event) {
         if (event.getName().equals("teams")) {
@@ -31,6 +34,10 @@ public class CommandManager extends ListenerAdapter {
             }
             pf = new PitForm(Objects.requireNonNull(event.getOption("number")).getAsString(), url);
             event.replyModal(FormCommand.pitForm()).queue();
+        }else if(event.getName().equals("scouted")){
+            event.reply(LTC.scouted()).queue();
+        }else if(event.getName().equals("needscout")){
+            event.reply(LTC.notScouted(event.getOption("string").getAsString())).queue();
         }
         System.currentTimeMillis();
     }

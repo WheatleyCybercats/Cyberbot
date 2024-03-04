@@ -12,7 +12,7 @@ public class FormCommand {
                 .setPlaceholder("Smoky")
                 .build();
 
-        TextInput robot = TextInput.create("robot", "Robot - DT/Shooter/Climb/Amp/Speaker/Trap", TextInputStyle.PARAGRAPH)
+        TextInput robot = TextInput.create("robot", "Robot - DriveTrain / sterdiness / what position they ", TextInputStyle.PARAGRAPH)
                 .setPlaceholder("Swerve drive / No shoot/ Yes climb / Yes amp / Yes speaker")
                 .build();
 
@@ -20,12 +20,12 @@ public class FormCommand {
                 .setPlaceholder("they have 4 note auto but not very consistent")
                 .build();
 
-        TextInput scoring = TextInput.create("scoring", "Robot Type / Consistency / Endgame", TextInputStyle.PARAGRAPH)
+        TextInput scoring = TextInput.create("scoring", "Climb/Amp/Speaker/Trap / Endgame ", TextInputStyle.PARAGRAPH)
                 .setPlaceholder("they don't seem like to be able to score speaker")
                 .setMinLength(1)
                 .build();
 
-        TextInput other = TextInput.create("other", "Opinions/Thoughts/RANK DRIVER", TextInputStyle.PARAGRAPH)
+        TextInput other = TextInput.create("other", "Opinions/Thoughts/RANK DRIVER/speed of cycle", TextInputStyle.PARAGRAPH)
                 .setPlaceholder("although it's not a good scoring bot but they seem to be a good fit for us")
                 .build();
 

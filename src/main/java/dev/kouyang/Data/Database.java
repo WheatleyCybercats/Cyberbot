@@ -17,7 +17,7 @@ public class Database {
 
     public static void readIn(){
         StringBuilder sb = new StringBuilder();
-        try (BufferedReader br = new BufferedReader(new FileReader("info.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(System.getProperty("user.home") + "/info.txt"))) {
             String line;
             // Read each line from the file until the end is reached
             while ((line = br.readLine()) != null) {
@@ -45,12 +45,12 @@ public class Database {
 
     public static void save() {
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter("info.txt"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(System.getProperty("user.home") + "/info.txt"));
             ObjectMapper mapper = new ObjectMapper();
             bw.write(mapper.writeValueAsString(Database.pitForms));
             bw.close();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getStackTrace());
         }
     }
 
