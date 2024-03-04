@@ -22,13 +22,12 @@ public class Bot {
                 .addEventListeners(new CommandManager()).build();
 
         List<CommandData> commandData = new ArrayList<>();
-        OptionData ping = new OptionData(OptionType.STRING, "string", "what u want to say");
         OptionData team = new OptionData(OptionType.INTEGER, "number", "Team number you want info.txt of");
-        OptionData form = new OptionData(OptionType.STRING, "string", "what do you want to scout");
+        OptionData formImage = new OptionData(OptionType.ATTACHMENT, "image", "picture of the bot", true);
+        OptionData formField = new OptionData(OptionType.INTEGER, "number", "Team Number", true);
 
-        commandData.add(Commands.slash("ping", "Says back whatever").addOptions(ping));
         commandData.add(Commands.slash("teams","teams").addOptions(team));
-        commandData.add(Commands.slash("form","give you answers").addOptions(form));
+        commandData.add(Commands.slash("scoutpit","Scout Pits").addOptions(formField).addOptions(formImage));
 
         jda.updateCommands().addCommands(commandData).queue();
     }

@@ -17,19 +17,14 @@ public class TeamCommand {
         Team team = API.api.getStat(optionMapping.getAsString());
         Database.teams.add(team);
         StringBuilder sb = new StringBuilder();
-        sb.append("Team Name: ").append(team.getName());
-        sb.append("\n");
-        sb.append("Team Number: ").append(team.getNumber());
-        sb.append("\n");
-        sb.append("Winrate: ").append(team.getWinrate()*10 + "%");
-        sb.append("\n");
-        sb.append("Website: ").append(team.getWebsite());
-        sb.append("\n");
-        sb.append("Recent norm_epa: ").append(team.getRecent());
-        sb.append("\n");
-        sb.append("Mean norm_epa: ").append(team.getMean());
-        sb.append("\n");
-        sb.append("Max norm_epa: ").append(team.getMax());
+        sb.append("Team Name: ").append(team.getName()+"\n");
+        sb.append("Team Number: ").append(team.getNumber()+"\n");
+        sb.append("Winrate: ").append(team.getWinrate()*100 + "%"+"\n");
+        sb.append("Website: ").append(team.getWebsite()+"\n");
+        sb.append("Recent norm_epa: ").append(team.getRecent()+"\n");
+        sb.append("Mean norm_epa: ").append(team.getMean()+"\n");
+        sb.append("Max norm_epa: ").append(team.getMax()+"\n");
+        sb.append("Robot Picture: ").append(team.getRobotPictureURL()+"\n");
         return sb.toString();
     }
 }
