@@ -1,17 +1,15 @@
 package dev.kouyang;
 
-import dev.kouyang.Statbotics.StatAPI;
-import dev.kouyang.TBA.TBAapi;
+import dev.kouyang.APIs.API;
+import dev.kouyang.APIs.Statbotics.StatAPI;
+import dev.kouyang.APIs.TBA.TBAapi;
+
+import static dev.kouyang.Discord.Bot.initBot;
 
 public class Main {
 
-    public static TBAapi TBAapi;
-
     public static void main(String[] args){
-        //initBot();
-        //api = new API();
-        StatAPI stat = new StatAPI();
-        stat.getTeam();
+        initBot();
     }
 
 }

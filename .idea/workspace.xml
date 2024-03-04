@@ -4,35 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68034787-434a-4c69-8417-59097804966d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Statbotics/Grabber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Statbotics/StatAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Statbotics/Types/Teams.java" afterDir="false" />
+    <list default="true" id="f11ecd26-5093-4a3a-b080-500994369654" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/API.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Statbotics/StatAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Types/TypesStat/Colors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Types/TypesStat/Full.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Types/TypesStat/NormEpa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Types/TypesStat/Record.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Types/TypesStat/Season.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Data/Types/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/FormCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/FormCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/TeamCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/TeamCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/TenTeamCommand.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/TBAapi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Core/Grabber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Grabber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/TBA/AvgMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Types/AvgMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/TBA/Matchinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Types/Matchinfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/TBA/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Types/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/TBA/preinfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/FormCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/FormCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/TeamCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/TeamCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Statbotics/Grabber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Statbotics/Grabber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Statbotics/StatAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Statbotics/Types/Teams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Types/TypesStat/TeamStat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/TBA/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Grabber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/TBA/Grabber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/TBAapi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/TBA/TBAapi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Types/AvgMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Types/TypesTBA/AvgMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Types/Matchinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Types/TypesTBA/Matchinfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/TBA/Types/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Types/TypesTBA/TeamTBA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/Core/Grabber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/TBA/AvgMatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/TBA/Matchinfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/TBA/Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/TBA/TBA/preinfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Statbotics/Grabber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Statbotics/Grabber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Statbotics/StatAPI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Statbotics/StatAPI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Statbotics/StatAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Statbotics/StatAPI.class" afterDir="false" />
     </list>
-    <list id="b0e8cdde-a256-4d48-95b5-99b09fcc9d5a" name="Changes by kouyang" comment="" />
+    <list id="120dc964-e9e1-48df-8d19-6e971a968bce" name="Changes by digitql" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/TeamCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/TeamCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Statbotics/Types/Teams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Types/TypesStat/TeamStat.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,40 +50,62 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/TeamCommand.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="4" changelist="f11ecd26-5093-4a3a-b080-500994369654" />
+        <range start1="3" end1="4" start2="5" end2="6" changelist="f11ecd26-5093-4a3a-b080-500994369654" />
+        <range start1="13" end1="14" start2="15" end2="16" changelist="f11ecd26-5093-4a3a-b080-500994369654" />
+        <range start1="15" end1="16" start2="17" end2="18" changelist="120dc964-e9e1-48df-8d19-6e971a968bce" />
+        <range start1="17" end1="18" start2="19" end2="20" changelist="120dc964-e9e1-48df-8d19-6e971a968bce" />
+        <range start1="19" end1="20" start2="21" end2="22" changelist="120dc964-e9e1-48df-8d19-6e971a968bce" />
+        <range start1="22" end1="22" start2="24" end2="39" changelist="120dc964-e9e1-48df-8d19-6e971a968bce" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/Types/TypesStat/TeamStat.java">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="f11ecd26-5093-4a3a-b080-500994369654" />
+        <range start1="5" end1="7" start2="5" end2="6" changelist="f11ecd26-5093-4a3a-b080-500994369654" />
+        <range start1="21" end1="26" start2="20" end2="20" changelist="120dc964-e9e1-48df-8d19-6e971a968bce" />
+        <range start1="27" end1="54" start2="21" end2="21" changelist="f11ecd26-5093-4a3a-b080-500994369654" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="2" />
-  </component>
-  <component name="ProjectId" id="2cRzUBPh8FMz8HrUhIN7gKrh6Sd" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2cQx0oTkpPa1E5gmxa3O99zEUuK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "onboarding.tips.debug.path": "/Users/digitql/IdeaProjects/Dicsord-Bot/src/main/java/org/CyberCats/Main.java",
-    "project.structure.last.edited": "Project",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="dev.kouyang.TBA" />
-      <recent name="dev.kouyang.Core" />
+      <recent name="dev.kouyang.APIs.Types" />
+      <recent name="dev.kouyang.Discord" />
     </key>
   </component>
   <component name="RunManager">
@@ -90,7 +114,7 @@
       <module name="Petah" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.kouyang.*" />
+          <option name="PATTERN" value="dev.kouyang.Discord.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,29 +128,34 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="68034787-434a-4c69-8417-59097804966d" name="Changes" comment="" />
-      <created>1708089280638</created>
+      <changelist id="f11ecd26-5093-4a3a-b080-500994369654" name="Changes" comment="" />
+      <created>1708057384508</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708089280638</updated>
+      <updated>1708057384508</updated>
+      <workItem from="1708057385633" duration="11305000" />
+      <workItem from="1708107656181" duration="451000" />
+      <workItem from="1708120827377" duration="2213000" />
+      <workItem from="1708719936067" duration="676000" />
+      <workItem from="1708899781220" duration="598000" />
+      <workItem from="1708901364819" duration="598000" />
+      <workItem from="1708986298152" duration="598000" />
+      <workItem from="1709060271057" duration="598000" />
+      <workItem from="1709525545428" duration="3360000" />
     </task>
     <servers />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/CyberCats/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

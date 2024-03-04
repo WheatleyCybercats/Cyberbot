@@ -1,7 +1,10 @@
 package dev.kouyang.Discord.Commands;
 
+import dev.kouyang.APIs.API;
+import dev.kouyang.Data.Database;
+import dev.kouyang.Data.Types.Team;
 import dev.kouyang.Main;
-import dev.kouyang.TBA.Types.Team;
+import dev.kouyang.APIs.Types.TypesTBA.TeamTBA;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 
 public class TeamCommand {
@@ -11,17 +14,22 @@ public class TeamCommand {
     }
 
     public String getResult(){
-        Team team = Main.TBAapi.teams.get(optionMapping.getAsInt());
+        Team team = API.api.getStat(optionMapping.getAsString());
+        Database.teams.add(team);
         StringBuilder sb = new StringBuilder();
-        sb.append("Nickname: ").append(team.getNickname());
+        sb.append("Team Name: ").append(team.getName());
         sb.append("\n");
-        sb.append("Team Number: ").append(team.getTeam_number());
+        sb.append("Team Number: ").append(team.getNumber());
         sb.append("\n");
-        sb.append("Rookie Year: ").append(team.getRookie_year());
+        sb.append("Winrate: ").append(team.getWinrate()*10 + "%");
         sb.append("\n");
         sb.append("Website: ").append(team.getWebsite());
-
-
+        sb.append("\n");
+        sb.append("Recent norm_epa: ").append(team.getRecent());
+        sb.append("\n");
+        sb.append("Mean norm_epa: ").append(team.getMean());
+        sb.append("\n");
+        sb.append("Max norm_epa: ").append(team.getMax());
         return sb.toString();
     }
 }
