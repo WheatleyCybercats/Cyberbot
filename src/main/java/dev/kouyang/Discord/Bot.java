@@ -20,7 +20,6 @@ public class Bot {
         jda = JDABuilder.createDefault("MTIwNzQxNDYwMzM0NTMwNTY3MA.GNThei.RvYKl8ow2BsRd1HDz76bFcTY4afkwwWMq1eZFc")
                 .setActivity(Activity.watching("Cybercats"))
                 .addEventListeners(new CommandManager()).build();
-
         List<CommandData> commandData = new ArrayList<>();
         OptionData team = new OptionData(OptionType.INTEGER, "number", "Team number you want info.txt of");
         OptionData formImage = new OptionData(OptionType.ATTACHMENT, "image", "picture of the bot", true);
@@ -30,7 +29,7 @@ public class Bot {
         commandData.add(Commands.slash("scoutpit","Scout Pits").addOptions(formField).addOptions(formImage));
         commandData.add(Commands.slash("scouted", "Teams that we scouted"));
         commandData.add(Commands.slash("needscout", "Teams that we need to scout"));
-
+        commandData.add(Commands.slash("matchscout", "Scout matches"));
 
         jda.updateCommands().addCommands(commandData).queue();
     }

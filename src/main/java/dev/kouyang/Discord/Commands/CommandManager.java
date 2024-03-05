@@ -49,6 +49,7 @@ public class CommandManager extends ListenerAdapter {
 
     @Override
     public void onModalInteraction(@NotNull ModalInteractionEvent event){
+        if(event.getModalId().equals("pit")) {
 
             String region = event.getValue("region").getAsString();
             String robot = event.getValue("robot").getAsString();
@@ -65,7 +66,10 @@ public class CommandManager extends ListenerAdapter {
             Database.pitForms.add(pf);
             Database.save();
 
-            event.reply("Thanks for your request!").setEphemeral(true).queue();
+            event.reply("Thanks for your scouting!").setEphemeral(true).queue();
+        }else if(event.getModalId().equals("match")){
+            event.reply("Thank you").setEphemeral(true).queue();
+        }
 
     }
 

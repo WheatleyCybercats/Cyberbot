@@ -38,7 +38,7 @@ public class FormCommand {
 
 
     public static Modal Matchform(){
-/*
+
         TextInput Matchnumber = TextInput.create("matchnum", "which match is it", TextInputStyle.SHORT)
                 .setPlaceholder("1/32 ... 2/32")
                 .build();
@@ -55,11 +55,8 @@ public class FormCommand {
                 .setPlaceholder("1/32 or 2/32")
                 .build();
         return Modal.create("match", "Match Scouting Form")
-                .addComponents(ActionRow.of(MatchnumbeMatchnumber) , ActionRow.of(Matchauto), ActionRow.of(Matchmidgame) ,ActionRow.of(Matchendgame), ActionRow.of(Matchopinion))
+                .addComponents(ActionRow.of(Matchnumber) , ActionRow.of(Matchauto), ActionRow.of(Matchmidgame) ,ActionRow.of(Matchendgame), ActionRow.of(Matchopinion))
                 .build();
-
- */
-return null;
     }
 
 }
