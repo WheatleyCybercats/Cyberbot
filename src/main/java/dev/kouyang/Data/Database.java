@@ -39,7 +39,7 @@ public class Database {
         ObjectMapper mapper = new ObjectMapper();
         try {
             // Parse the JSON string into an ArrayList of PitForm objects
-            pitForms = mapper.readValue(readJsonFile("Pit_Data.json"), new TypeReference<ArrayList<PitForm>>(){});
+            pitForms = mapper.readValue(readJsonFile("pit_data.json"), new TypeReference<ArrayList<PitForm>>(){});
 
             // Example: Print out the parsed objects
             for (PitForm form : pitForms) {
@@ -61,7 +61,7 @@ public class Database {
         } catch (IOException e) {
             System.out.println(e.getStackTrace());
         }
-        saveCloud("Pit_Data.json");
+        saveCloud("pit_data.json");
     }
 
     public static void parseHashMap() {

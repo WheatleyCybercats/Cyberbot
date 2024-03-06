@@ -22,14 +22,17 @@ public class Bot {
                 .addEventListeners(new CommandManager()).build();
         List<CommandData> commandData = new ArrayList<>();
         OptionData team = new OptionData(OptionType.INTEGER, "number", "Team number you want info.txt of");
-        OptionData formImage = new OptionData(OptionType.ATTACHMENT, "image", "picture of the bot", true);
+        OptionData formImage = new OptionData(OptionType.ATTACHMENT, "image", "picture of the bot");
         OptionData formField = new OptionData(OptionType.INTEGER, "number", "Team Number", true);
+        OptionData scoutInfo = new OptionData(OptionType.INTEGER, "number", "Team number of the team you want to query for", true);
 
         commandData.add(Commands.slash("teams","teams").addOptions(team));
         commandData.add(Commands.slash("scoutpit","Scout Pits").addOptions(formField).addOptions(formImage));
-        commandData.add(Commands.slash("scouted", "Teams that we scouted"));
+        commandData.add(Commands.slash("scoutinfo", "Teams that we scouted").addOptions(scoutInfo));
         commandData.add(Commands.slash("needscout", "Teams that we need to scout"));
         commandData.add(Commands.slash("matchscout", "Scout matches"));
+        commandData.add(Commands.slash("listscouted", "list the teams that we scouted"));
+
 
         jda.updateCommands().addCommands(commandData).queue();
     }

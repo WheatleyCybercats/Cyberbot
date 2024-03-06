@@ -6,16 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="f11ecd26-5093-4a3a-b080-500994369654" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/TBA/TBAapi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/APIs/TBA/TBAapi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Data/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Data/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Bot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/ListTeamCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/ListTeamCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Cyberbot-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cyberbot-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Data/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Data/Database.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Bot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Bot.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/CommandManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/FormCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/FormCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/ListTeamCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/kouyang/Discord/Commands/ListTeamCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-Cyberbot-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-Cyberbot-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
-    <list id="120dc964-e9e1-48df-8d19-6e971a968bce" name="Changes by digitql" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/FormCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Commands/FormCommand.java" afterDir="false" />
-    </list>
+    <list id="120dc964-e9e1-48df-8d19-6e971a968bce" name="Changes by digitql" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,14 +34,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/dev/kouyang/Discord/Bot.java">
-      <ranges>
-        <range start1="22" end1="23" start2="22" end2="22" changelist="120dc964-e9e1-48df-8d19-6e971a968bce" />
-        <range start1="32" end1="33" start2="31" end2="32" changelist="f11ecd26-5093-4a3a-b080-500994369654" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -53,30 +48,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "Maven.Cyberbot [clean].executor": "Run",
-    "Maven.Cyberbot [package].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Cyberbot [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Cyberbot [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="dev.kouyang.APIs.Types" />
@@ -128,6 +123,7 @@
       <workItem from="1709060271057" duration="598000" />
       <workItem from="1709525545428" duration="5118000" />
       <workItem from="1709559971472" duration="17881000" />
+      <workItem from="1709588737973" duration="8338000" />
     </task>
     <servers />
   </component>

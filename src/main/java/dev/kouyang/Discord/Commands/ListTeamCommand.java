@@ -18,21 +18,55 @@ public class ListTeamCommand {
         TBAapi tbAapi = new TBAapi();
         ArrayList<TeamTBA> total = tbAapi.getEvent(eventCode);
         StringBuilder noScout = new StringBuilder();
-        for(PitForm pf : Database.pitForms){
-            for(TeamTBA tt : total){
-                if(!(pf.getTeamNumber().equals(tt.getTeam_number()))){
-                    noScout.append(tt.getTeam_number()).append("\n");
-                }
+        for(TeamTBA tba : total){
+            if(!(Database.pitFormHashMap.containsKey(tba.getTeam_number()))){
+                noScout.append(tba.getTeam_number()).append("\n");
             }
         }
         return noScout.toString();
     }
 
-    public String scouted(){
-        String result = "";
+    public String listScouted(){
+        StringBuilder sb = new StringBuilder();
         for(PitForm pf : Database.pitForms){
-            result += pf.getTeamNumber() + "\n";
+            sb.append(pf.getTeamNumber()).append("\n");
         }
-        return result;
+        return sb.toString();
+    }
+
+    public String scouted(String number){
+        StringBuilder sb = new StringBuilder();
+        Database.parseHashMap();
+        try {
+            PitForm pf = Database.pitFormHashMap.get(number);
+            sb.append("Robot Team Number: \n").append(pf.getTeamNumber()).append("\n");
+            sb.append("\n");
+            sb.append("------------------------");
+            sb.append("\n");
+            sb.append("Region Scouted: \n").append(pf.getRegion()).append("\n");
+            sb.append("\n");
+            sb.append("------------------------");
+            sb.append("\n");
+            sb.append("Robot Description: \n").append(pf.getRobot().replaceAll("\n", " | ")).append("\n");
+            sb.append("\n");
+            sb.append("------------------------");
+            sb.append("\n");
+            sb.append("Auto Description: \n").append(pf.getAuto().replaceAll("\n", " | ")).append("\n");
+            sb.append("\n");
+            sb.append("------------------------");
+            sb.append("\n");
+            sb.append("Scoring Description: \n").append(pf.getScoring().replaceAll("\n", " | ")).append("\n");
+            sb.append("\n");
+            sb.append("------------------------");
+            sb.append("\n");
+            sb.append("Other information: \n").append(pf.getOther().replaceAll("\n", " | ")).append("\n");
+            sb.append("\n");
+            sb.append("------------------------");
+            sb.append("\n");
+            sb.append("Robot Picture: \n").append(pf.getProxyURL()).append("\n");
+        }catch (NullPointerException e){
+            sb.append("We haven't scouted them yet! Perhaps scout them with /scoutpit :)");
+        }
+        return sb.toString();
     }
 }

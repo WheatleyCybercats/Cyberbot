@@ -37,12 +37,13 @@ public class CommandManager extends ListenerAdapter {
             }
             pf = new PitForm(Objects.requireNonNull(event.getOption("number")).getAsString(), url);
             event.replyModal(FormCommand.pitForm()).queue();
-        }else if(event.getName().equals("scouted")){
-            event.reply(LTC.scouted()).queue();
+        }else if(event.getName().equals("listscouted")){
+            event.reply(LTC.listScouted()).queue();
         }else if(event.getName().equals("needscout")){
             event.reply("Choose the event").addActionRow(
-                    StringSelectMenu.create("choose-event").addOptions(SelectOption.of("Smoky Mountain", "2024tktn")).build()).queue();
-            //event.reply(LTC.notScouted(event.getOption("string").getAsString())).queue();
+                    StringSelectMenu.create("choose-event").addOptions(SelectOption.of("Smoky Mountain", "2024tnkn")).build()).queue();
+        }else if(event.getName().equals("scoutinfo")){
+            event.reply(LTC.scouted(Objects.requireNonNull(event.getOption("number")).getAsString())).queue();
         }
         System.currentTimeMillis();
     }
@@ -65,6 +66,7 @@ public class CommandManager extends ListenerAdapter {
 
             Database.pitForms.add(pf);
             Database.save();
+            Database.readIn();
 
             event.reply("Thanks for your scouting!").setEphemeral(true).queue();
         }else if(event.getModalId().equals("match")){
@@ -76,7 +78,7 @@ public class CommandManager extends ListenerAdapter {
     @Override
     public void onStringSelectInteraction(@NotNull StringSelectInteractionEvent event){
         if(event.getComponentId().equals("choose-event")){
-            event.reply("You chose " + event.getValues().getFirst()).queue();
+            event.reply(LTC.notScouted(event.getValues().getFirst())).queue();
         }
     }
 }
